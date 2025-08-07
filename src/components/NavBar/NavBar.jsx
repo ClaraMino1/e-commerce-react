@@ -5,11 +5,11 @@ import CartWidget from "../CartWidget/CartWidget";
 const NavBar = () =>{
     return(
         <header>
-            <h1>Nombre Tienda</h1>
+            <h1>Thelirium</h1>
             <nav>
                 <ul>
-                    <li>Pantalones</li>
-                    <li>Remeras</li>
+                    <li>Instrumentos</li>
+                    <li>Accesorios</li>
                     <li>Ver Todo</li>
                 </ul>
             </nav>
