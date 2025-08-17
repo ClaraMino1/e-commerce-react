@@ -1,12 +1,11 @@
-import "./CartWidget.css"; 
+import "./CartWidget.css";
+import cartImg from "../../../public/cart.png"
  
 const CartWidget = () =>{
 
-    const imgCart = "cart.png";
-
     return(
         <div>
-            <img className= "imgCarrito" src={imgCart} alt="imagen de carrito de compras" />
+            <img className= "imgCarrito" src={cartImg} alt="imagen de carrito de compras" />
         </div>
     )
 }

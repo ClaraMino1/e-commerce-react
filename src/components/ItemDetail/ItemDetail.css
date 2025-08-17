@@ -1,0 +1,5 @@
+.itemDetail {
+  padding-top: 100px; /* altura de tu NavBar */
+  min-height: calc(100vh - 100px);
+}
+
