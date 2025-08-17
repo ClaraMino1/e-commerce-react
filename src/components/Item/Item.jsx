@@ -1,15 +1,14 @@
+import { Link } from 'react-router-dom';
 
-//preview del producto
-const Item = ({id,modelo,instrumento,marca,precio}) => {
+const Item = ({id,instrumento, marca, modelo,precio}) => {
   return (
-   
     <div>
-        <h3>{modelo}</h3>
-        <h4>{instrumento}</h4>
-        <h4>{marca}</h4>
-        <p>{precio}</p>
+        <h3>Intrumento: {instrumento}</h3>
+        <p>marca: {marca}</p>
+        <p>modelo: {modelo}</p>
+        <p>precio: {precio}</p>
+        <Link to={`/item/${id}`}><button>Ver detalles</button></Link> 
     </div>
-   
   )
 }
 
