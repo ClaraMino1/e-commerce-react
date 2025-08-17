@@ -22,7 +22,6 @@ const ItemListContainer = () =>{
     },[categoria])
     return(
         <>
-            
             <ItemList productos={productos}/>
             
         </>

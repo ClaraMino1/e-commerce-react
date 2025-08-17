@@ -1,0 +1,84 @@
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5%; 
+    height: calc(100vh - 80px);
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 100vw;
+    overflow: hidden;
+    position: relative;
+}
+
+.home-text {
+    flex: 1;
+    z-index: 2; /* Para que quede sobre la guitarra */
+    max-width: 600px;
+}
+
+.home-subtitle {
+    font-size: 1.2rem;
+    color: #ff6b00;
+    margin-bottom: 1rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    opacity: 0;
+    animation: fadeInUp 0.8s 0.3s ease-out forwards;
+}
+
+.home-title {
+    font-size: 3.5rem;
+    line-height: 1.2;
+    margin-bottom: 2rem;
+    background: linear-gradient(90deg, #ffffff, #e0e0e0);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    opacity: 0;
+    animation: fadeInUp 0.8s 0.5s ease-out forwards;
+    text-shadow: 0 0 10px rgba(255, 107, 0, 0.3);
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.home img.backGroundGuitar {
+    height: 90%;
+    max-height: 90%;
+    object-fit: contain;
+    position: absolute;
+    right: -5%;
+    top: 50%;
+    transform: translateY(0%) rotate(90deg); /* Empieza en 0% */
+    opacity: 0;
+    filter: drop-shadow(0 0 20px rgba(255, 107, 0, 0.5));
+    z-index: 1;
+    transition: all 0.5s ease;
+    animation: guitarSlideIn 1s 0.7s ease-out forwards; 
+}
+
+@keyframes guitarSlideIn {
+    0% {
+        opacity: 0;
+        transform: translateY(0%) rotate(90deg);
+    }
+    100% {
+        opacity: 0.9;
+        transform: translateY(-50%) rotate(90deg);
+    }
+}
+
+.home img.backGroundGuitar:hover {
+    opacity: 1;
+    filter: drop-shadow(0 0 30px rgba(255, 107, 0, 0.8));
+    transform: translateY(-50%) rotate(90deg) scale(1.02);
+}

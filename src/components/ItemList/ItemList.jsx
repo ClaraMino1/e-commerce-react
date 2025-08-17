@@ -1,11 +1,12 @@
 import Item from '../Item/Item'
+import './ItemList.css'
 
 const ItemList = ({productos}) => {
   
   return (
-    <div>
+    <section className='itemList'>
          {productos.map((product)=> <Item key={product.id} {...product}/>)} 
-    </div>
+    </section>
   )
 }
 

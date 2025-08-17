@@ -1,9 +1,8 @@
-import React from "react";
 import "./CartWidget.css"; 
  
 const CartWidget = () =>{
 
-    const imgCart = "shoppingCart.png";
+    const imgCart = "cart.png";
 
     return(
         <div>

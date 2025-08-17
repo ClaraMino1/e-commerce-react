@@ -1,14 +1,18 @@
-import React from "react";
 import "./NavBar.css";
 import CartWidget from "../CartWidget/CartWidget";
 import { Link,NavLink } from "react-router-dom";
+import logo from "../../../public/logo.png";
+
  
 const NavBar = () =>{
     return(
         <header>
-           <Link to="/"> 
+            
+            <Link to="/" className="logo-container"> 
+                <img src={logo} alt="Logo de Thelirium" className="logo"/>
                 <h1>Thelirium</h1>
             </Link>
+            
 
             <nav>
                 <ul>

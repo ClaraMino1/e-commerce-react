@@ -12,7 +12,7 @@ const productos = [
         id: 2,
         instrumento: "Guitarra acústica",
         marca: "SX",
-        modelo: "acustic",
+        modelo: "Sd104ce",
         precio: 850,
         categoria: "guitarras",
         stock: 11
