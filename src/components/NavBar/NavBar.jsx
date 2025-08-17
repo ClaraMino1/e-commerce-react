@@ -17,16 +17,16 @@ const NavBar = () =>{
             <nav>
                 <ul>
                     <li>
-                        <NavLink to="/categoria/guitarras">Guitarras</NavLink>
+                        <NavLink to="/categoria/guitar">Guitarras</NavLink>
                     </li>
                     <li>
-                        <NavLink to="/categoria/percusion">Percusion</NavLink>
+                        <NavLink to="/categoria/percussion">Percusion</NavLink>
                     </li>
                     <li>
-                        <NavLink to="/categoria/teclas">Teclas</NavLink>
+                        <NavLink to="/categoria/keyboards">Teclas</NavLink>
                     </li>
                     <li>
-                        <NavLink to="/categoria/bajos">Bajos</NavLink>
+                        <NavLink to="/categoria/bass">Bajos</NavLink>
                     </li>
                 </ul>
             </nav>
