@@ -51,7 +51,7 @@ const productos = [
     },
     {
         id: 6,
-        instrumento: "Batterie Acoustique TIM122B BL",
+        instrumento: "Jaguar Bass V MN TBL",
         marca: "Squier",
         estilo: "Jaguar",
         precio: 780,
