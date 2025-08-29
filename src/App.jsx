@@ -7,6 +7,7 @@ import Home from './components/Home/Home';
 import Error from './components/Error/Error';
 import NavBar from './components/NavBar/NavBar';
 import Cart from './components/Cart/Cart';
+import Checkout from './components/Checkout/Checkout';
 
 function App() {
 
@@ -19,6 +20,7 @@ function App() {
             <Route path='/categoria/:categoria' element={<ItemListContainer/>}></Route>
             <Route path='/item/:id' element={<ItemDetailContainer/>}></Route>
             <Route path='/cart' element={<Cart/>}></Route>
+            <Route path='/checkout' element={<Checkout/>}></Route>
             <Route path='*' element={<Error/>}></Route>
           </Routes>
       </CarritoProvider>
