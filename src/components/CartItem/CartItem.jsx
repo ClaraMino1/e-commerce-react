@@ -3,11 +3,11 @@ import { carritoContext } from "../../context/carritoContext"
 
 const CartItem = ({item,cantidad}) => {
 
-    const {eliminarProducto} = useContext(carritoContext)
+  const {eliminarProducto} = useContext(carritoContext)
 
   return (
     <>
-        <h4>{item.nombre}</h4>
+        <h4>{item.instrumento}</h4>
         <p>Cantidad: {cantidad}</p>
         <p>Precio: {item.precio}</p>
         <button onClick={()=>eliminarProducto(item.id)}>Eliminar</button>

@@ -7,3 +7,8 @@
     overflow-x: hidden;
     background-color: #070707;
 }
+
+main {
+    padding-top: 100px; /* altura de tu NavBar */
+}
+

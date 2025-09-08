@@ -15,14 +15,16 @@ function App() {
     <BrowserRouter>
       <CarritoProvider>
           <NavBar/>
-          <Routes>
-            <Route path='/' element={<Home/>}></Route> 
-            <Route path='/categoria/:categoria' element={<ItemListContainer/>}></Route>
-            <Route path='/item/:id' element={<ItemDetailContainer/>}></Route>
-            <Route path='/cart' element={<Cart/>}></Route>
-            <Route path='/checkout' element={<Checkout/>}></Route>
-            <Route path='*' element={<Error/>}></Route>
-          </Routes>
+          <main>
+            <Routes>
+              <Route path='/' element={<Home/>}></Route> 
+              <Route path='/categoria/:categoria' element={<ItemListContainer/>}></Route>
+              <Route path='/item/:id' element={<ItemDetailContainer/>}></Route>
+              <Route path='/cart' element={<Cart/>}></Route>
+              <Route path='/checkout' element={<Checkout/>}></Route>
+              <Route path='*' element={<Error/>}></Route>
+            </Routes>
+          </main>
       </CarritoProvider>
     </BrowserRouter>
   )
