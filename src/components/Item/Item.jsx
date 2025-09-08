@@ -14,7 +14,7 @@ const Item = ({id,instrumento, marca, estilo,precio,imageUrl,stock}) => {
         <p>Estilo: {estilo}</p>
         <p>Precio: ${precio}</p>
         <p>Stock: {stock}</p>
-        <button>Ver detalles</button>
+        <button className="button-details" role="button">Ver detalles</button>
       </div> 
 
     </Link>

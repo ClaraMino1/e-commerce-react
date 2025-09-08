@@ -3,6 +3,7 @@ import { carritoContext } from "../../context/carritoContext"
 import { Link } from 'react-router-dom'
 import ItemCount from '../ItemCount/ItemCount'
 import "./ItemDetail.css"
+import { toast } from 'react-toastify'
 
 
 const ItemDetail = ({id,instrumento,stock,marca,estilo,precio,categoria,imageUrl}) => {
@@ -14,12 +15,14 @@ const ItemDetail = ({id,instrumento,stock,marca,estilo,precio,categoria,imageUrl
     setCantidad(cantidad)
     const item = {id,instrumento,precio}
     agregarAlCarrito(item,cantidad)
+    toast.success("Su compra fue enviada al carrito",{autoClose: 1000, theme:"dark", position: "top-right"})
+
   }
+
 
 
   return (
     <article className='itemDetail'>
-      <h1 style={{color:"red"}}>faltan los estilos</h1>
       <h2>{instrumento}</h2>
       <h3>Marca: {marca}</h3>
       <h3>Estilo: {estilo}</h3>
