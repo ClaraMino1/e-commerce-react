@@ -1,23 +1,23 @@
 .itemCard{
-    margin: 40px;
-    padding: 10px;
-    display: flex;
-    border: 1px solid #ccc;
+  margin: 40px;
+  padding: 10px;
+  display: flex;
+  border: 1px solid #ccc;
 }
 
 .itemDetails{
-    display: flex;
-    flex-direction: column; 
+  display: flex;
+  flex-direction: column; 
 }
 
 .itemDetails h3{
-    font-size: 1.6em;
-    margin: 20px 0;
+  font-size: 1.6em;
+  margin: 20px 0;
 }
 
 .itemDetails p{
-    font-size: 1em;
-    margin: 5px 0;
+  font-size: 1em;
+  margin: 5px 0;
 }
 
 .itemImg {

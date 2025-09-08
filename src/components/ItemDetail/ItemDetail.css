@@ -1,5 +1,24 @@
 .itemDetail {
   padding-top: 100px; 
   min-height: calc(100vh - 100px);
+  display: flex;
+  justify-content: start;
 }
 
+.itemDetail img{
+  height: 550px;
+}
+
+.itemInfoContainer span{
+  font-weight: 100 ;
+  font-size: .8em ;
+}
+
+.itemInfoContainer h1 , h2, h3{
+  font-size: 1.5em;
+  margin-top: 10px;
+}
+
+.itemInfoContainer h1{
+  font-size: 2em;
+}

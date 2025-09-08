@@ -23,16 +23,22 @@ const ItemDetail = ({id,instrumento,stock,marca,estilo,precio,categoria,imageUrl
 
   return (
     <article className='itemDetail'>
-      <h2>{instrumento}</h2>
-      <h3>Marca: {marca}</h3>
-      <h3>Estilo: {estilo}</h3>
-      <p>Precio: ${precio}</p>
-      <p>Categoria: {categoria}</p>
+
       <img src={imageUrl} alt={instrumento} />
+
+      <div className='itemInfoContainer'>
+        <h1>{instrumento}</h1>
+        <h2>Marca:  <span>{marca}</span></h2>
+        <h2>Estilo:  <span>{estilo}</span></h2>
+        <h3>Precio: <span>${precio}</span></h3>
+        <h3>Categoria: <span>{categoria}</span></h3>
+        <h3>
+          {
+            cantidad > 0 ? (<Link to="/cart">Terminar mi compra</Link>) : (<ItemCount inicial={1} stock={stock} funcionAgregar={handleCantidad}/>)
+          }
+        </h3>
+      </div>
     
-    {
-      cantidad > 0 ? (<Link to="/cart">Terminar mi compra</Link>) : (<ItemCount inicial={1} stock={stock} funcionAgregar={handleCantidad}/>)
-    }
     </article>
   )
 }
