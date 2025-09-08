@@ -22,3 +22,8 @@
 .itemInfoContainer h1{
   font-size: 2em;
 }
+
+.buttonFinish{
+  background-color: transparent;
+  color: #000;
+}

@@ -34,7 +34,7 @@ const ItemDetail = ({id,instrumento,stock,marca,estilo,precio,categoria,imageUrl
         <h3>Categoria: <span>{categoria}</span></h3>
         <h3>
           {
-            cantidad > 0 ? (<Link to="/cart">Terminar mi compra</Link>) : (<ItemCount inicial={1} stock={stock} funcionAgregar={handleCantidad}/>)
+            cantidad > 0 ? (<button className="button-details" role="button"><Link to="/cart" className='buttonFinish'>Terminar mi compra</Link></button>) : (<ItemCount inicial={1} stock={stock} funcionAgregar={handleCantidad}/>)
           }
         </h3>
       </div>

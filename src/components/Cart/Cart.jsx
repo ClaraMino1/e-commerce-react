@@ -12,7 +12,7 @@ const Cart = () => {
         return(
             <div  className='emptyCart'>
                 <h2>No hay productos en el carrito.</h2>
-                <span><Link to="/">Ver Productos</Link></span>
+                <Link to="/"><span>Ver Productos</span></Link>
             </div>
         )
     }
@@ -22,10 +22,10 @@ const Cart = () => {
         {
             carrito.map(producto => <CartItem key={producto.id} {...producto}/> )
         }
-        <h3>Total: ${total}</h3>
-        <h3>Cantidad Total: {cantidadTotal}</h3>
-        <button onClick={()=>vaciarCarrito()}> Vaciar Carrito </button>
-        <Link to="/checkout"> Finalizar Compra</Link>
+        <p><span>Total:</span> ${total}</p>
+        <p><span> Cantidad Total:</span> {cantidadTotal}</p>
+        <button className="optionCart" onClick={()=>vaciarCarrito()}> Vaciar Carrito </button>
+        <button className="optionCart"><Link to="/checkout"> Finalizar Compra</Link></button>
 
     </div>
   )
