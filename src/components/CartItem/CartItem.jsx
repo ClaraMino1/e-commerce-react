@@ -1,7 +1,7 @@
 import { useContext } from "react"
 import { carritoContext } from "../../context/carritoContext"
 
-const   CartItem = ({item,cantidad}) => {
+const CartItem = ({item,cantidad,image}) => {
 
   const {eliminarProducto} = useContext(carritoContext)
 

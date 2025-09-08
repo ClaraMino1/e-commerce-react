@@ -16,7 +16,6 @@ const Cart = () => {
             </div>
         )
     }
-
   return (
     <div className='cartContainer'>
         {
