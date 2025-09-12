@@ -2,7 +2,7 @@ import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyC79eyfv6xd1QPNDyEOJuzlzxr5hrSp8HE",
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
   authDomain: "thelirium-b2010.firebaseapp.com",
   projectId: "thelirium-b2010",
   storageBucket: "thelirium-b2010.firebasestorage.app",
@@ -13,3 +13,4 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 
 export const db= getFirestore(app)
+

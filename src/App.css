@@ -12,3 +12,8 @@ main {
     padding-top: 100px; /* altura de tu NavBar */
 }
 
+
+a{
+    text-decoration: none !important;
+    color: #fff !important; 
+}

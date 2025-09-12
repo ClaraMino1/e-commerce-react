@@ -1,4 +1,7 @@
 import './App.css';
+import "bootstrap";
+import "bootstrap/dist/css/bootstrap.min.css";
+import { ToastContainer } from "react-toastify";
 import { BrowserRouter,Route,Routes}   from 'react-router-dom';
 import { CarritoProvider } from './context/carritoContext';
 import ItemListContainer from './components/ItemListContainer/ItemListContainer';
@@ -26,6 +29,7 @@ function App() {
             </Routes>
           </main>
       </CarritoProvider>
+      <ToastContainer/>
     </BrowserRouter>
   )
 

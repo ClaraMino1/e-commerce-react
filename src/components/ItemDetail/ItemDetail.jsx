@@ -19,8 +19,6 @@ const ItemDetail = ({id,instrumento,stock,marca,estilo,precio,categoria,imageUrl
 
   }
 
-
-
   return (
     <article className='itemDetail'>
 

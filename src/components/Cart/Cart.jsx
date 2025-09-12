@@ -19,7 +19,8 @@ const Cart = () => {
   return (
     <div className='cartContainer'>
         {
-            carrito.map(producto => <CartItem key={producto.id} {...producto}/> )
+            carrito.map(producto => <CartItem key={producto.item.id} {...producto}/> )
+            
         }
         <p><span>Total:</span> ${total}</p>
         <p><span> Cantidad Total:</span> {cantidadTotal}</p>
