@@ -30,5 +30,9 @@ Aquí algunas carpetas y archivos relevantes:
 - `.env`: variables de entorno (credenciales de Firebase, etc.).
 
 ---
+## ✨ Dominio del sitio:
+
+https://thelirium.vercel.app/
+
 
 
